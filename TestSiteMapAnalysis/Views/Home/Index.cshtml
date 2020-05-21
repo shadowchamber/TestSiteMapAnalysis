@@ -5,4 +5,16 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form asp-action="Analyze" asp-controller="Home" asp-antiforgery="true">
+        <div>
+            <div>
+                URL:
+                <input type="text" name="Url" value="https://www.xml-sitemaps.com/download/www.maelyscosmetics.com-a22b52e5a/sitemap.xml?view=1" />
+            </div>
+            <div>
+                <input type="submit" value="Analyze" />
+            </div>
+        </div>
+    </form>
 </div>
